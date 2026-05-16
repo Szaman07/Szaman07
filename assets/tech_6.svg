@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="588" height="90" viewBox="0 0 588 90">
-<text x="12" y="26" font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="#D4AF37" letter-spacing="1">◆ Documentation & Design</text>
+<text x="12" y="26" font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="#D4AF37" letter-spacing="1">◆ Documentation &amp; Design</text>
 <line x1="12" y1="32" x2="576" y2="32" stroke="#D4AF37" stroke-width="0.5" opacity="0.3"/>
 <rect x="12" y="42" width="108" height="30" rx="4" fill="#0f1f14" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.4"/>
 <rect x="17" y="46" width="22" height="22" rx="3" fill="#008080" opacity="0.85"/>

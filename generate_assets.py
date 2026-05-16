@@ -71,9 +71,10 @@ def tech_cat_svg(cat_name, items, fname):
             return "#1a1a1a"
         return "#fff"
 
+    cat_safe = cat_name.replace('&', '&amp;')
     svg = f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
-<text x="{pad}" y="{pad+14}" font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="{GOLD}" letter-spacing="1">◆ {cat_name}</text>
+<text x="{pad}" y="{pad+14}" font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="{GOLD}" letter-spacing="1">◆ {cat_safe}</text>
 <line x1="{pad}" y1="{pad+20}" x2="{w-pad}" y2="{pad+20}" stroke="{GOLD}" stroke-width="0.5" opacity="0.3"/>
 '''
     for i,(name,color) in enumerate(items):
@@ -131,8 +132,9 @@ focuses = [
 fy = 58
 focus_lines = ""
 for text, color in focuses:
+    text_safe = text.replace('&', '&amp;')
     focus_lines += f'<rect x="16" y="{fy-8}" width="8" height="8" rx="2" fill="{color}" opacity="0.7"/>\n'
-    focus_lines += f'<text x="30" y="{fy}" font-family="\'Courier New\',monospace" font-size="10" fill="{TXT}">{text}</text>\n'
+    focus_lines += f'<text x="30" y="{fy}" font-family="\'Courier New\',monospace" font-size="10" fill="{TXT}">{text_safe}</text>\n'
     fy += 22
 
 save("sidebar_focus.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
