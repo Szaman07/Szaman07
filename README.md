@@ -59,6 +59,19 @@
   <img src="./assets/gold-divider.svg" width="80%"/>
 </div>
 
+<br/>
+
+<!-- Connections -->
+<div align="center">
+  <a href="https://www.linkedin.com/in/sadman-zaman-724056216/" target="_blank">
+    <img src="./assets/btn_linkedin.svg" alt="LinkedIn"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.facebook.com/Sadman.Zaman07/" target="_blank">
+    <img src="./assets/btn_facebook.svg" alt="Facebook"/>
+  </a>
+</div>
+
 <!-- Footer -->
 <div align="center">
   <br/>

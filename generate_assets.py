@@ -95,25 +95,39 @@ save("gold-divider.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
 </svg>
 ''')
 
-# ── QUEST LOG (larger) ──
+# ── QUEST LOG (fixed spacing) ──
 save("quest_log.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="180" viewBox="0 0 800 180">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
 <text x="400" y="30" text-anchor="middle" font-family="'Courier New',monospace" font-size="18" font-weight="700" fill="{GOLD}" letter-spacing="4">QUEST LOG</text>
-<line x1="80" y1="42" x2="330" y2="42" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
-<polygon points="395,36 400,42 395,48 390,42" fill="{GREEN}" opacity="0.7"/>
-<line x1="470" y1="42" x2="720" y2="42" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
+<line x1="80" y1="50" x2="330" y2="50" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
+<polygon points="395,44 400,50 395,56 390,50" fill="{GREEN}" opacity="0.7"/>
+<line x1="470" y1="50" x2="720" y2="50" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
 
-<rect x="40" y="60" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
-<text x="60" y="90" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Ancient AI Relic</text>
-<text x="60" y="115" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
-<text x="60" y="135" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
+<rect x="40" y="75" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
+<text x="60" y="105" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Ancient AI Relic</text>
+<text x="60" y="130" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
+<text x="60" y="150" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
 
-<rect x="420" y="60" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
-<text x="440" y="90" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Sacred DL Manuscript</text>
-<text x="440" y="115" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
-<text x="440" y="135" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
+<rect x="420" y="75" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
+<text x="440" y="105" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Sacred DL Manuscript</text>
+<text x="440" y="130" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
+<text x="440" y="150" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
 </svg>
 ''')
+
+# ── SOCIAL BUTTONS ──
+def social_btn(name, color, fname):
+    save(fname, f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="42" viewBox="0 0 160 42">
+  <rect x="2" y="2" width="156" height="38" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="9" width="24" height="24" rx="4" fill="{color}" opacity="0.9"/>
+  <text x="24" y="26" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="#fff">{name[:2]}</text>
+  <text x="48" y="26" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{TXT}">{name}</text>
+</svg>
+''')
+
+social_btn("LinkedIn", "#0077B5", "btn_linkedin.svg")
+social_btn("Facebook", "#1877F2", "btn_facebook.svg")
 
 # ── FOOTER (larger) ──
 save("footer.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
