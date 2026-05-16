@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50" viewBox="0 0 500 50">
+<polygon points="214,18 220,28 214,38 208,28" fill="#78C27A" opacity="0.5"/>
+<text x="250" y="32" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#D4AF37" opacity="0.7" letter-spacing="1">Thanks for visiting! May the Triforce guide you.</text>
+<polygon points="440,12 448,22 440,32 448,22 456,12 448,22 456,32" fill="#D4AF37" opacity="0.4"/>
+<polygon points="440,12 448,22 456,12" fill="#D4AF37" opacity="0.35"/>
+<polygon points="432,22 440,32 448,22" fill="#D4AF37" opacity="0.35"/>
+<polygon points="448,22 456,32 464,22" fill="#D4AF37" opacity="0.35"/>
+</svg>
