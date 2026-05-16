@@ -36,7 +36,7 @@ CATS = [
     ("Dev Tools", [
         ("Git","#F05032"), ("Linux","#FCC624"),
     ]),
-    ("Documentation &amp; Design", [
+    ("Documentation & Design", [
         ("LaTeX","#008080"), ("Markdown","#555555"), ("Figma","#F24E1E"),
         ("Onshape","#53B13B"), ("AutoCAD","#E51937"),
     ]),
