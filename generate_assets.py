@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate clean Zelda ALTTP-inspired SVG assets. Minimal, atmospheric, readable."""
+"""Generate larger, cleaner Zelda ALTTP-inspired SVG assets."""
 import os
 
 OUT = r"e:\study\Projects\github\red1-for-hek-main\assets"
@@ -7,7 +7,7 @@ os.makedirs(OUT, exist_ok=True)
 
 GOLD = "#D4AF37"
 GREEN = "#78C27A"
-BG_CARD = "#1a2e1a"
+BG_CARD = "#13261a" # Slightly lighter dark green for contrast
 TXT = "#E2DFD2"
 
 def save(name, svg):
@@ -15,8 +15,6 @@ def save(name, svg):
         f.write(svg)
     print(f"  OK: {name}")
 
-# ── TECH CATEGORY SVGs ──
-# Fixed card size: 120x32, 4 per row max, readable text
 CATS = [
     ("Programming Languages", [
         ("C","#A8B9CC"), ("C++","#00599C"), ("Java","#ED8B00"),
@@ -56,13 +54,13 @@ def dark_text(c):
     return "#1a1a1a" if c in ("#F7DF1E","#FCC624","#F9AB00","#61DAFB") else "#fff"
 
 def tech_svg(cat_name, items, fname):
-    cw, ch, gap = 120, 34, 8
+    cw, ch, gap = 170, 46, 12  # Increased card sizes
     per_row = min(len(items), 4)
     rows = (len(items) + per_row - 1) // per_row
-    pad = 14
-    hdr_h = 32
+    pad = 20
+    hdr_h = 44  # Increased header height
     w = pad*2 + per_row*cw + (per_row-1)*gap
-    h = pad + hdr_h + rows*(ch+gap) + 4
+    h = pad + hdr_h + rows*(ch+gap) + 10
 
     cards = ""
     for i,(name,color) in enumerate(items):
@@ -71,36 +69,57 @@ def tech_svg(cat_name, items, fname):
         y = pad + hdr_h + r*(ch+gap)
         ab = ABBR.get(name, name[:2])
         tc = dark_text(color)
-        cards += f'''  <rect x="{x}" y="{y}" width="{cw}" height="{ch}" rx="5" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.6" stroke-opacity="0.5"/>
-  <rect x="{x+6}" y="{y+5}" width="24" height="24" rx="4" fill="{color}" opacity="0.85"/>
-  <text x="{x+18}" y="{y+22}" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" font-weight="700" fill="{tc}">{ab}</text>
-  <text x="{x+36}" y="{y+22}" font-family="'Courier New',monospace" font-size="12" fill="{TXT}">{name}</text>
+        cards += f'''  <rect x="{x}" y="{y}" width="{cw}" height="{ch}" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.6"/>
+  <rect x="{x+8}" y="{y+7}" width="32" height="32" rx="4" fill="{color}" opacity="0.9"/>
+  <text x="{x+24}" y="{y+29}" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="{tc}">{ab}</text>
+  <text x="{x+48}" y="{y+29}" font-family="'Courier New',monospace" font-size="14" fill="{TXT}">{name}</text>
 '''
 
+    cat_safe = cat_name.replace('&', '&amp;')
     save(fname, f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
-  <text x="{w//2}" y="{pad+12}" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="{GOLD}" letter-spacing="1">◆ {cat_name} ◆</text>
-  <line x1="{pad+20}" y1="{pad+20}" x2="{w-pad-20}" y2="{pad+20}" stroke="{GOLD}" stroke-width="0.5" opacity="0.25"/>
+  <text x="{w//2}" y="{pad+18}" text-anchor="middle" font-family="'Courier New',monospace" font-size="18" font-weight="700" fill="{GOLD}" letter-spacing="2">◆ {cat_safe} ◆</text>
+  <line x1="{pad+40}" y1="{pad+30}" x2="{w-pad-40}" y2="{pad+30}" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
 {cards}</svg>
 ''')
 
 for i,(cat,items) in enumerate(CATS):
     tech_svg(cat, items, f"tech_{i}.svg")
 
-# ── GOLD DIVIDER (refined) ──
+# ── GOLD DIVIDER (larger) ──
 save("gold-divider.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="20" viewBox="0 0 800 20">
-  <line x1="100" y1="10" x2="360" y2="10" stroke="{GOLD}" stroke-width="0.8" opacity="0.3"/>
-  <polygon points="400,4 406,10 400,16 394,10" fill="{GREEN}" opacity="0.6"/>
-  <line x1="440" y1="10" x2="700" y2="10" stroke="{GOLD}" stroke-width="0.8" opacity="0.3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="24" viewBox="0 0 900 24">
+  <line x1="120" y1="12" x2="410" y2="12" stroke="{GOLD}" stroke-width="1.2" opacity="0.4"/>
+  <polygon points="450,4 458,12 450,20 442,12" fill="{GREEN}" opacity="0.7"/>
+  <line x1="490" y1="12" x2="780" y2="12" stroke="{GOLD}" stroke-width="1.2" opacity="0.4"/>
 </svg>
 ''')
 
-# ── FOOTER ──
+# ── QUEST LOG (larger) ──
+save("quest_log.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="180" viewBox="0 0 800 180">
+<text x="400" y="30" text-anchor="middle" font-family="'Courier New',monospace" font-size="18" font-weight="700" fill="{GOLD}" letter-spacing="4">QUEST LOG</text>
+<line x1="80" y1="42" x2="330" y2="42" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
+<polygon points="395,36 400,42 395,48 390,42" fill="{GREEN}" opacity="0.7"/>
+<line x1="470" y1="42" x2="720" y2="42" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
+
+<rect x="40" y="60" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
+<text x="60" y="90" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Ancient AI Relic</text>
+<text x="60" y="115" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
+<text x="60" y="135" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
+
+<rect x="420" y="60" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
+<text x="440" y="90" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Sacred DL Manuscript</text>
+<text x="440" y="115" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
+<text x="440" y="135" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
+</svg>
+''')
+
+# ── FOOTER (larger) ──
 save("footer.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="460" height="40" viewBox="0 0 460 40">
-  <text x="230" y="24" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="{GOLD}" opacity="0.6" letter-spacing="1">Thanks for visiting! May the Triforce guide you. ▲</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="50" viewBox="0 0 600 50">
+  <text x="300" y="30" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" fill="{GOLD}" opacity="0.8" letter-spacing="1">Thanks for visiting! May the Triforce guide you. ▲</text>
 </svg>
 ''')
 
-print("\nAll assets generated!")
+print("\nAll assets generated with updated typography!")

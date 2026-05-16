@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="532" height="92" viewBox="0 0 532 92">
-  <text x="266" y="26" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="#D4AF37" letter-spacing="1">◆ ML / Data Science ◆</text>
-  <line x1="34" y1="34" x2="498" y2="34" stroke="#D4AF37" stroke-width="0.5" opacity="0.25"/>
-  <rect x="14" y="46" width="120" height="34" rx="5" fill="#1a2e1a" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.5"/>
-  <rect x="20" y="51" width="24" height="24" rx="4" fill="#EE4C2C" opacity="0.85"/>
-  <text x="32" y="68" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" font-weight="700" fill="#fff">Pt</text>
-  <text x="50" y="68" font-family="'Courier New',monospace" font-size="12" fill="#E2DFD2">PyTorch</text>
-  <rect x="142" y="46" width="120" height="34" rx="5" fill="#1a2e1a" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.5"/>
-  <rect x="148" y="51" width="24" height="24" rx="4" fill="#FF6F00" opacity="0.85"/>
-  <text x="160" y="68" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" font-weight="700" fill="#fff">TF</text>
-  <text x="178" y="68" font-family="'Courier New',monospace" font-size="12" fill="#E2DFD2">TensorFlow</text>
-  <rect x="270" y="46" width="120" height="34" rx="5" fill="#1a2e1a" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.5"/>
-  <rect x="276" y="51" width="24" height="24" rx="4" fill="#F7931E" opacity="0.85"/>
-  <text x="288" y="68" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" font-weight="700" fill="#fff">Sk</text>
-  <text x="306" y="68" font-family="'Courier New',monospace" font-size="12" fill="#E2DFD2">scikit-learn</text>
-  <rect x="398" y="46" width="120" height="34" rx="5" fill="#1a2e1a" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.5"/>
-  <rect x="404" y="51" width="24" height="24" rx="4" fill="#F9AB00" opacity="0.85"/>
-  <text x="416" y="68" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" font-weight="700" fill="#1a1a1a">Gc</text>
-  <text x="434" y="68" font-family="'Courier New',monospace" font-size="12" fill="#E2DFD2">Google Colab</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="756" height="132" viewBox="0 0 756 132">
+  <text x="378" y="38" text-anchor="middle" font-family="'Courier New',monospace" font-size="18" font-weight="700" fill="#D4AF37" letter-spacing="2">◆ ML / Data Science ◆</text>
+  <line x1="60" y1="50" x2="696" y2="50" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
+  <rect x="20" y="64" width="170" height="46" rx="6" fill="#13261a" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.6"/>
+  <rect x="28" y="71" width="32" height="32" rx="4" fill="#EE4C2C" opacity="0.9"/>
+  <text x="44" y="93" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="#fff">Pt</text>
+  <text x="68" y="93" font-family="'Courier New',monospace" font-size="14" fill="#E2DFD2">PyTorch</text>
+  <rect x="202" y="64" width="170" height="46" rx="6" fill="#13261a" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.6"/>
+  <rect x="210" y="71" width="32" height="32" rx="4" fill="#FF6F00" opacity="0.9"/>
+  <text x="226" y="93" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="#fff">TF</text>
+  <text x="250" y="93" font-family="'Courier New',monospace" font-size="14" fill="#E2DFD2">TensorFlow</text>
+  <rect x="384" y="64" width="170" height="46" rx="6" fill="#13261a" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.6"/>
+  <rect x="392" y="71" width="32" height="32" rx="4" fill="#F7931E" opacity="0.9"/>
+  <text x="408" y="93" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="#fff">Sk</text>
+  <text x="432" y="93" font-family="'Courier New',monospace" font-size="14" fill="#E2DFD2">scikit-learn</text>
+  <rect x="566" y="64" width="170" height="46" rx="6" fill="#13261a" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.6"/>
+  <rect x="574" y="71" width="32" height="32" rx="4" fill="#F9AB00" opacity="0.9"/>
+  <text x="590" y="93" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" font-weight="700" fill="#1a1a1a">Gc</text>
+  <text x="614" y="93" font-family="'Courier New',monospace" font-size="14" fill="#E2DFD2">Google Colab</text>
 </svg>

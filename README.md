@@ -9,25 +9,6 @@
 
 <br/>
 
-<!-- Short Intro -->
-<div align="center">
-  <em>"It's dangerous to go alone! Take this."</em> ❤️
-  <br/><br/>
-  <strong>Senior CS Undergrad</strong> from Bangladesh.
-  <br/>
-  Exploring systems, AI, and meaningful research.
-  <br/>
-  <sub>Gen AI · LLMs · Deep Learning · Full Stack · Higher Studies</sub>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="./assets/gold-divider.svg" width="80%"/>
-</div>
-
-<br/>
-
 <!-- Tech Stack -->
 <div align="center">
 
