@@ -9,8 +9,7 @@
   
   <rect width="100%" height="100%" fill="transparent"/>
   
-  <!-- Icon -->
-  <text x="5" y="28" font-size="20">⚡</text>
+  <!-- Icon Removed -->
   
   <!-- Text -->
   <text x="35" y="27" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="600" fill="url(#sectionGrad)">

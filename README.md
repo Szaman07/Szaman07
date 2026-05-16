@@ -1,7 +1,7 @@
 <div align="center">
   
   <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-  <!-- 🎯 ANIMATED HEADER                                                          -->
+  <!-- ANIMATED HEADER                                                             -->
   <!-- ═══════════════════════════════════════════════════════════════════════════ -->
   
   <img src="./assets/header-animation.svg" alt="Sadman Zaman" width="100%"/>
@@ -11,7 +11,7 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 🖥️ TERMINAL INTRO SECTION                                                   -->
+<!-- TERMINAL INTRO SECTION                                                      -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -25,60 +25,34 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 👤 ABOUT ME SECTION                                                          -->
+<!-- ABOUT ME SECTION                                                             -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
 <img src="./assets/section-about.svg" width="180"/>
 
 <br/><br/>
 
-<table>
-<tr>
-<td width="55%" valign="top">
-
-### 🎯 What I Do
+### What I Do
 
 ```yaml
 name: Sadman Zaman
-located_in: Bangladesh 🇧🇩
+located_in: Bangladesh
 current_status: Senior CS Undergrad
 
 areas_of_expertise:
-  - 🤖 Generative AI & LLMs
-  - 🧠 Deep Learning
-  - 🐍 Python Development
-  - 🔬 Data-Driven Research
+  - Generative AI and LLMs
+  - Deep Learning
+  - Python Development
+  - Data-Driven Research
+  - Full Stack App Development
+  - Data Analysis
+  - Machine Learning
+  - C and Java Development
+  - DSA with C++
 
-currently_focusing_on:
-  - Meaningful AI Research
-  - Preparing for higher studies
-
-life_philosophy: "Clean code, authentic research."
+goal: Higher studies
 ```
 
-</td>
-<td width="45%" valign="top">
-
-### 🚀 Current Focus
-
-- 🔬 **Researching** Gen AI and Large Language Models
-- 🤖 **Evaluating** Deep Learning architectures
-- 🌟 **Building** an authentic technical portfolio
-- 📚 **Preparing** for higher studies
-
-<br/>
-
-### 💡 Quick Facts
-
-- 🎓 Pursuing higher studies in CS
-- 🔥 Passionate about technical depth
-- 🌱 Always experimenting with AI
-- ☕ Fueled by curiosity
-
-</td>
-</tr>
-</table>
-
 <br/>
 
 <img src="./assets/divider.svg" width="100%"/>
@@ -86,48 +60,7 @@ life_philosophy: "Clean code, authentic research."
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 🌟 FEATURED PROJECTS                                                        -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-  <h2 style="color: #667eea;">🌟 Featured Projects</h2>
-</div>
-
-<br/>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔜 [Project Title Coming Soon]
-*Currently polishing and preparing to upload.*
-
-**Goal:**
-- Meaningful Research and Analysis.
-
-**Tech:** `Python` `PyTorch` `LLMs`
-</td>
-<td width="50%" valign="top">
-
-### 🔜 [Project Title Coming Soon]
-*Currently polishing and preparing to upload.*
-
-**Goal:**
-- Deep Learning implementation and experimentation.
-
-**Tech:** `TBD`
-</td>
-</tr>
-</table>
-
-<br/>
-
-<img src="./assets/divider.svg" width="100%"/>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- ⚡ TECH STACK                                                               -->
+<!-- TECH STACK                                                                  -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
 <img src="./assets/section-tech.svg" width="180"/>
@@ -136,25 +69,31 @@ life_philosophy: "Clean code, authentic research."
 
 <div align="center">
 
-<!-- 💻 LANGUAGES -->
-<h4>💻 Languages & Systems</h4>
+<h4>Languages & Systems</h4>
 <p>
   <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=python&theme=dark" alt="Python" title="Python"/></a>
   <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://skillicons.dev/icons?i=c&theme=dark" alt="C" title="C"/></a>
   <a href="https://isocpp.org/" target="_blank"><img src="https://skillicons.dev/icons?i=cpp&theme=dark" alt="C++" title="C++"/></a>
+  <a href="https://www.oracle.com/java/" target="_blank"><img src="https://skillicons.dev/icons?i=java&theme=dark" alt="Java" title="Java"/></a>
   <a href="https://www.linux.org/" target="_blank"><img src="https://skillicons.dev/icons?i=linux&theme=dark" alt="Linux" title="Linux"/></a>
 </p>
 
-<!-- 🤖 AI & MACHINE LEARNING -->
-<h4>🤖 Data Science & Machine Learning</h4>
+<h4>Data Science & Machine Learning</h4>
 <p>
   <a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" alt="PyTorch" title="PyTorch"/></a>
+  <a href="https://scikit-learn.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sklearn&theme=dark" alt="Scikit-learn" title="Scikit-learn"/></a>
+  <a href="https://pandas.pydata.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pandas&theme=dark" alt="Pandas" title="Pandas"/></a>
+  <a href="https://www.tensorflow.org/" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" alt="TensorFlow" title="TensorFlow"/></a>
 </p>
 
-<!-- 🔧 TOOLS & PLATFORMS -->
-<h4>🔧 Tools</h4>
+<h4>Full Stack & Tools</h4>
 <p>
   <a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git&theme=dark" alt="Git" title="Git"/></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js&theme=dark" alt="JavaScript" title="JavaScript"/></a>
+  <a href="https://reactjs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React" title="React"/></a>
+  <a href="https://nodejs.org/" target="_blank"><img src="https://skillicons.dev/icons?i=nodejs&theme=dark" alt="Node.js" title="Node.js"/></a>
+  <a href="https://www.mongodb.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mongodb&theme=dark" alt="MongoDB" title="MongoDB"/></a>
+  <a href="https://www.mysql.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mysql&theme=dark" alt="MySQL" title="MySQL"/></a>
 </p>
 
 </div>
@@ -166,7 +105,7 @@ life_philosophy: "Clean code, authentic research."
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 🌐 CONNECT WITH ME                                                          -->
+<!-- CONNECT WITH ME                                                             -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
 <img src="./assets/section-connect.svg" width="160"/>
@@ -192,19 +131,5 @@ life_philosophy: "Clean code, authentic research."
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 🌟 FOOTER                                                                   -->
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-  
-  <img src="./assets/footer.svg" width="100%"/>
-  
-  <br/><br/>
-  
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16,18,20&height=80&section=footer"/>
-  
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- 📝 END OF README                                                            -->
+<!-- END OF README                                                               -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
