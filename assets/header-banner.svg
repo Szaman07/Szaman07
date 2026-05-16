@@ -68,7 +68,7 @@
 
   <!-- ==================== DISTANT CASTLE ==================== -->
   <!-- Shifted slightly up so it sits naturally in the hills -->
-  <g transform="translate(500, 235)" fill="#06120b">
+  <g transform="translate(500, 220)" fill="#06120b">
     <!-- Main building -->
     <rect x="-40" y="-30" width="80" height="30"/>
     <!-- Central Tower -->
@@ -87,11 +87,11 @@
   </g>
 
   <!-- ==================== THE PATH ==================== -->
-  <polygon points="460,235 540,235 650,380 350,380" fill="url(#pathGrad)"/>
+  <polygon points="465,220 535,220 650,380 350,380" fill="url(#pathGrad)"/>
   
   <!-- Path stone details / perspective lines -->
   <path d="M470,250 L530,250 M455,275 L545,275 M435,305 L565,305 M400,340 L600,340" stroke="#08140c" stroke-width="2" opacity="0.5"/>
-  <path d="M500,235 L500,380 M485,235 L420,380 M515,235 L580,380" stroke="#08140c" stroke-width="2" opacity="0.4"/>
+  <path d="M500,220 L500,380 M485,220 L420,380 M515,220 L580,380" stroke="#08140c" stroke-width="2" opacity="0.4"/>
 
   <!-- Grass details along the path -->
   <path d="M340,370 Q360,360 380,380 M360,350 Q380,340 400,360 M400,320 Q410,310 430,330" fill="none" stroke="#0d2b1a" stroke-width="3"/>
@@ -173,27 +173,27 @@
   <!-- ==================== MAIN TITLE TEXT ==================== -->
   <!-- Scaled down from 78 to 64 and positioned lower to avoid overlap -->
   <g filter="url(#textGlow)">
-    <text x="500" y="130" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="900" fill="#EADCA6" letter-spacing="8">
+    <text x="500" y="145" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="900" fill="#EADCA6" letter-spacing="8">
       SADMAN ZAMAN
     </text>
   </g>
 
   <!-- Subtitle -->
-  <text x="500" y="170" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="15" fill="#8ca893" letter-spacing="4" font-weight="700">
-    CS UNDERGRADUATE · SYSTEMS · AI · RESEARCH
+  <text x="500" y="185" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#A8C4B0" letter-spacing="3" font-style="italic">
+    CS UNDERGRADUATE   ✦   SYSTEMS   ✦   AI   ✦   RESEARCH
   </text>
 
   <!-- ==================== CENTER RUPEE & DECORATION ==================== -->
-  <line x1="300" y1="210" x2="450" y2="210" stroke="#D4AF37" stroke-width="2" opacity="0.7"/>
-  <polygon points="290,210 298,205 306,210 298,215" fill="#D4AF37"/>
-  <circle cx="435" cy="210" r="3" fill="#D4AF37"/>
+  <line x1="300" y1="250" x2="450" y2="250" stroke="#D4AF37" stroke-width="2" opacity="0.7"/>
+  <polygon points="290,250 298,245 306,250 298,255" fill="#D4AF37"/>
+  <circle cx="435" cy="250" r="3" fill="#D4AF37"/>
   
-  <line x1="550" y1="210" x2="700" y2="210" stroke="#D4AF37" stroke-width="2" opacity="0.7"/>
-  <polygon points="710,210 702,205 694,210 702,215" fill="#D4AF37"/>
-  <circle cx="565" cy="210" r="3" fill="#D4AF37"/>
+  <line x1="550" y1="250" x2="700" y2="250" stroke="#D4AF37" stroke-width="2" opacity="0.7"/>
+  <polygon points="710,250 702,245 694,250 702,255" fill="#D4AF37"/>
+  <circle cx="565" cy="250" r="3" fill="#D4AF37"/>
 
   <!-- The Floating Green Rupee -->
-  <g filter="url(#rupeeGlow)" transform="translate(500, 210) scale(1.2)">
+  <g filter="url(#rupeeGlow)" transform="translate(500, 250) scale(1.2)">
     <polygon points="0,-24 16,-8 16,8 0,24 -16,8 -16,-8" fill="#78C27A" stroke="#A7F432" stroke-width="1">
       <animate attributeName="fill" values="#78C27A;#8BD68D;#A7F432;#8BD68D;#78C27A" dur="3s" repeatCount="indefinite"/>
     </polygon>
@@ -201,7 +201,7 @@
     <line x1="0" y1="-24" x2="0" y2="24" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
     <line x1="-16" y1="-8" x2="16" y2="-8" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
     <line x1="-16" y1="8" x2="16" y2="8" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
-    <animateTransform attributeName="transform" type="translate" values="500,210; 500,203; 500,210" dur="3s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="500,250; 500,243; 500,250" dur="3s" repeatCount="indefinite"/>
   </g>
 
 </svg>
