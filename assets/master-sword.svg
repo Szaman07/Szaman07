@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="180" viewBox="0 0 200 180">
+  <defs>
+    <filter id="swordGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="auraGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="180" fill="#07110B"/>
+
+  <!-- Distant tree silhouettes -->
+  <polygon points="10,95 25,55 40,95" fill="#0a1e10" opacity="0.7"/>
+  <polygon points="35,90 48,50 61,90" fill="#0d2418" opacity="0.6"/>
+  <polygon points="140,92 155,48 170,92" fill="#0d2418" opacity="0.6"/>
+  <polygon points="160,95 175,58 190,95" fill="#0a1e10" opacity="0.7"/>
+
+  <!-- Ground -->
+  <rect x="0" y="140" width="200" height="40" fill="#0a1e10"/>
+  <rect x="0" y="138" width="200" height="4" fill="#132e1f" opacity="0.6"/>
+
+  <!-- Stone ruins left -->
+  <rect x="25" y="105" width="10" height="35" fill="#1a2e1a" opacity="0.4"/>
+  <rect x="22" y="102" width="16" height="5" fill="#1a2e1a" opacity="0.4"/>
+
+  <!-- Stone ruins right -->
+  <rect x="165" y="108" width="10" height="32" fill="#1a2e1a" opacity="0.4"/>
+  <rect x="162" y="105" width="16" height="5" fill="#1a2e1a" opacity="0.4"/>
+
+  <!-- Sacred glow aura behind sword -->
+  <ellipse cx="100" cy="115" rx="30" ry="40" fill="#78C27A" opacity="0.05" filter="url(#auraGlow)">
+    <animate attributeName="opacity" values="0.04;0.08;0.04" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Stone pedestal -->
+  <rect x="82" y="130" width="36" height="12" fill="#2a3a2a" rx="2"/>
+  <rect x="78" y="138" width="44" height="6" fill="#1e2e1e" rx="1"/>
+  <rect x="86" y="128" width="28" height="4" fill="#354535" rx="1"/>
+  <!-- Pedestal detail lines -->
+  <rect x="90" y="132" width="20" height="1" fill="#4a5a4a" opacity="0.4"/>
+  <rect x="92" y="135" width="16" height="1" fill="#4a5a4a" opacity="0.3"/>
+
+  <!-- Master Sword blade -->
+  <g filter="url(#swordGlow)">
+    <rect x="97" y="68" width="6" height="60" fill="#B0BEC5"/>
+    <rect x="98" y="68" width="2" height="60" fill="#CFD8DC" opacity="0.6"/>
+    <!-- Blade tip -->
+    <polygon points="97,68 100,56 103,68" fill="#B0BEC5"/>
+    <polygon points="98,68 100,60 102,68" fill="#CFD8DC" opacity="0.5"/>
+  </g>
+
+  <!-- Crossguard -->
+  <rect x="86" y="126" width="28" height="4" fill="#D4AF37" rx="1"/>
+  <rect x="84" y="125" width="4" height="6" fill="#D4AF37" rx="1"/>
+  <rect x="112" y="125" width="4" height="6" fill="#D4AF37" rx="1"/>
+  <!-- Crossguard gems -->
+  <circle cx="88" cy="128" r="2" fill="#78C27A"/>
+  <circle cx="112" cy="128" r="2" fill="#78C27A"/>
+
+  <!-- Grip -->
+  <rect x="98" y="128" width="4" height="8" fill="#5D4037"/>
+  <rect x="97" y="130" width="1" height="4" fill="#4E342E" opacity="0.5"/>
+  <rect x="102" y="130" width="1" height="4" fill="#4E342E" opacity="0.5"/>
+
+  <!-- Triforce on blade -->
+  <g transform="translate(100, 82)" opacity="0.7">
+    <polygon points="0,-5 3,1 -3,1" fill="#D4AF37"/>
+    <polygon points="-3,2 0,8 -6,8" fill="#D4AF37"/>
+    <polygon points="3,2 6,8 0,8" fill="#D4AF37"/>
+  </g>
+
+  <!-- Tiny sparkles around sword -->
+  <circle cx="85" cy="80" r="1" fill="#D4AF37" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <circle cx="118" cy="90" r="1" fill="#A7F432" opacity="0">
+    <animate attributeName="opacity" values="0;0.6;0" dur="2.5s" repeatCount="indefinite" begin="1.2s"/>
+  </circle>
+  <circle cx="92" cy="100" r="0.8" fill="#78C27A" opacity="0">
+    <animate attributeName="opacity" values="0;0.7;0" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="112" cy="75" r="1" fill="#D4AF37" opacity="0">
+    <animate attributeName="opacity" values="0;0.5;0" dur="3.5s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+
+  <!-- Moss/vine on ruins -->
+  <rect x="25" y="108" width="3" height="3" fill="#1a4a2a" opacity="0.4"/>
+  <rect x="172" y="110" width="3" height="3" fill="#1a4a2a" opacity="0.4"/>
+
+  <!-- Grass tufts -->
+  <rect x="50" y="138" width="3" height="3" fill="#1a4a2a" opacity="0.4"/>
+  <rect x="70" y="137" width="2" height="3" fill="#1a4a2a" opacity="0.3"/>
+  <rect x="130" y="138" width="3" height="3" fill="#1a4a2a" opacity="0.4"/>
+  <rect x="150" y="137" width="2" height="3" fill="#1a4a2a" opacity="0.3"/>
+</svg>

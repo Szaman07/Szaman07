@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <defs>
+    <!-- Rupee glow filter -->
+    <filter id="rupeeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Text glow -->
+    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#D4AF37" flood-opacity="0.4"/>
+    </filter>
+    <!-- Triforce glow -->
+    <filter id="triGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="900" height="320" fill="#07110B"/>
+
+  <!-- Sky gradient layer -->
+  <rect width="900" height="180" fill="#091a0f" opacity="0.8"/>
+  <rect width="900" height="100" fill="#0B1A13" opacity="0.5"/>
+
+  <!-- ===== DISTANT MOUNTAINS / HILLS ===== -->
+  <!-- Far hills -->
+  <polygon points="0,160 60,120 130,140 200,110 280,130 350,100 420,125 500,95 560,120 640,105 720,125 800,110 860,130 900,115 900,180 0,180" fill="#0d2418" opacity="0.7"/>
+  <!-- Mid hills -->
+  <polygon points="0,175 80,145 150,160 230,140 310,155 380,135 460,150 540,130 620,148 700,138 780,155 860,142 900,150 900,190 0,190" fill="#102a1c" opacity="0.8"/>
+
+  <!-- ===== PIXEL TREES (Background layer) ===== -->
+  <!-- Tree cluster left bg -->
+  <rect x="30" y="130" width="8" height="50" fill="#1a3a25"/>
+  <polygon points="34,100 10,145 58,145" fill="#14301d"/>
+  <polygon points="34,115 16,142 52,142" fill="#183823"/>
+
+  <!-- Tree cluster center-left bg -->
+  <rect x="160" y="125" width="8" height="55" fill="#1a3a25"/>
+  <polygon points="164,90 138,140 190,140" fill="#14301d"/>
+  <polygon points="164,108 144,138 184,138" fill="#183823"/>
+
+  <!-- Tree cluster right bg -->
+  <rect x="720" y="128" width="8" height="52" fill="#1a3a25"/>
+  <polygon points="724,95 700,142 748,142" fill="#14301d"/>
+  <polygon points="724,112 706,140 742,140" fill="#183823"/>
+
+  <rect x="790" y="132" width="7" height="48" fill="#1a3a25"/>
+  <polygon points="793,100 772,145 815,145" fill="#14301d"/>
+  <polygon points="793,118 778,142 808,142" fill="#183823"/>
+
+  <!-- ===== PIXEL TREES (Foreground - taller, darker) ===== -->
+  <!-- Left foreground trees -->
+  <rect x="0" y="150" width="10" height="70" fill="#0d2418"/>
+  <polygon points="5,105 -22,165 32,165" fill="#0f2a1a"/>
+  <polygon points="5,120 -14,160 24,160" fill="#132e1f"/>
+
+  <rect x="60" y="145" width="10" height="75" fill="#0d2418"/>
+  <polygon points="65,98 38,158 92,158" fill="#0f2a1a"/>
+  <polygon points="65,115 44,155 86,155" fill="#132e1f"/>
+
+  <!-- Right foreground trees -->
+  <rect x="830" y="148" width="10" height="72" fill="#0d2418"/>
+  <polygon points="835,100 808,162 862,162" fill="#0f2a1a"/>
+  <polygon points="835,118 814,158 856,158" fill="#132e1f"/>
+
+  <rect x="870" y="152" width="12" height="68" fill="#0d2418"/>
+  <polygon points="876,108 850,165 902,165" fill="#0f2a1a"/>
+  <polygon points="876,125 856,162 896,162" fill="#132e1f"/>
+
+  <!-- ===== GROUND / GRASS ===== -->
+  <rect x="0" y="220" width="900" height="100" fill="#0a1e10"/>
+  <rect x="0" y="218" width="900" height="6" fill="#132e1f"/>
+  <!-- Grass tufts (pixel dots) -->
+  <rect x="80" y="216" width="4" height="4" fill="#1a4a2a" opacity="0.6"/>
+  <rect x="200" y="215" width="3" height="5" fill="#1a4a2a" opacity="0.5"/>
+  <rect x="350" y="216" width="4" height="4" fill="#1a4a2a" opacity="0.6"/>
+  <rect x="550" y="215" width="3" height="5" fill="#1a4a2a" opacity="0.5"/>
+  <rect x="680" y="216" width="4" height="4" fill="#1a4a2a" opacity="0.6"/>
+  <rect x="820" y="215" width="3" height="5" fill="#1a4a2a" opacity="0.5"/>
+
+  <!-- ===== RUINS / STONE PILLARS ===== -->
+  <!-- Left pillar -->
+  <rect x="100" y="170" width="16" height="50" fill="#1a2e1a" opacity="0.5"/>
+  <rect x="96" y="168" width="24" height="6" fill="#1a2e1a" opacity="0.5"/>
+  <!-- Right pillar -->
+  <rect x="784" y="172" width="16" height="48" fill="#1a2e1a" opacity="0.5"/>
+  <rect x="780" y="170" width="24" height="6" fill="#1a2e1a" opacity="0.5"/>
+
+  <!-- ===== GOLD PIXEL BORDER ===== -->
+  <!-- Top border -->
+  <rect x="0" y="0" width="900" height="4" fill="#D4AF37"/>
+  <rect x="0" y="4" width="900" height="2" fill="#8B7225" opacity="0.6"/>
+  <!-- Bottom border -->
+  <rect x="0" y="314" width="900" height="4" fill="#D4AF37"/>
+  <rect x="0" y="312" width="900" height="2" fill="#8B7225" opacity="0.6"/>
+  <!-- Left border -->
+  <rect x="0" y="0" width="4" height="320" fill="#D4AF37"/>
+  <!-- Right border -->
+  <rect x="896" y="0" width="4" height="320" fill="#D4AF37"/>
+
+  <!-- Corner ornaments -->
+  <!-- Top-left -->
+  <rect x="4" y="6" width="20" height="2" fill="#D4AF37" opacity="0.7"/>
+  <rect x="4" y="6" width="2" height="20" fill="#D4AF37" opacity="0.7"/>
+  <rect x="8" y="10" width="8" height="2" fill="#D4AF37" opacity="0.4"/>
+  <rect x="8" y="10" width="2" height="8" fill="#D4AF37" opacity="0.4"/>
+  <!-- Top-right -->
+  <rect x="876" y="6" width="20" height="2" fill="#D4AF37" opacity="0.7"/>
+  <rect x="894" y="6" width="2" height="20" fill="#D4AF37" opacity="0.7"/>
+  <rect x="884" y="10" width="8" height="2" fill="#D4AF37" opacity="0.4"/>
+  <rect x="890" y="10" width="2" height="8" fill="#D4AF37" opacity="0.4"/>
+  <!-- Bottom-left -->
+  <rect x="4" y="312" width="20" height="2" fill="#D4AF37" opacity="0.7"/>
+  <rect x="4" y="294" width="2" height="20" fill="#D4AF37" opacity="0.7"/>
+  <!-- Bottom-right -->
+  <rect x="876" y="312" width="20" height="2" fill="#D4AF37" opacity="0.7"/>
+  <rect x="894" y="294" width="2" height="20" fill="#D4AF37" opacity="0.7"/>
+
+  <!-- ===== TRIFORCE (top center) ===== -->
+  <g filter="url(#triGlow)" transform="translate(450, 28)">
+    <!-- Top triangle -->
+    <polygon points="0,-16 12,6 -12,6" fill="#D4AF37"/>
+    <!-- Bottom-left triangle -->
+    <polygon points="-12,8 0,30 -24,30" fill="#D4AF37"/>
+    <!-- Bottom-right triangle -->
+    <polygon points="12,8 24,30 0,30" fill="#D4AF37"/>
+  </g>
+
+  <!-- ===== TITLE TEXT ===== -->
+  <g filter="url(#textGlow)">
+    <text x="450" y="105" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="52" font-weight="700" fill="#D4AF37" letter-spacing="6">
+      SADMAN ZAMAN
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="450" y="138" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" fill="#78C27A" letter-spacing="3" opacity="0.85">
+    CS Undergraduate  ·  Systems  ·  AI  ·  Research
+  </text>
+
+  <!-- ===== FLOATING GREEN RUPEE (center) ===== -->
+  <g filter="url(#rupeeGlow)" transform="translate(450, 175)">
+    <!-- Rupee shape -->
+    <polygon points="0,-22 14,-8 14,8 0,22 -14,8 -14,-8" fill="#78C27A" stroke="#A7F432" stroke-width="1">
+      <animate attributeName="fill" values="#78C27A;#8BD68D;#A7F432;#8BD68D;#78C27A" dur="3s" repeatCount="indefinite"/>
+    </polygon>
+    <!-- Rupee inner highlight -->
+    <polygon points="0,-14 6,-6 6,6 0,14 -6,6 -6,-6" fill="#A7F432" opacity="0.3"/>
+    <!-- Rupee center line -->
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#A7F432" stroke-width="1" opacity="0.4"/>
+    <!-- Float animation -->
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="2.5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ===== LINK SPRITE (right side, simple pixel art) ===== -->
+  <g transform="translate(760, 188)">
+    <!-- Hat -->
+    <rect x="4" y="-28" width="10" height="4" fill="#2E7D32"/>
+    <rect x="8" y="-32" width="8" height="4" fill="#2E7D32"/>
+    <rect x="12" y="-36" width="6" height="4" fill="#2E7D32"/>
+    <rect x="16" y="-36" width="8" height="4" fill="#2E7D32"/>
+    <rect x="20" y="-32" width="6" height="4" fill="#1B5E20"/>
+    <!-- Hair -->
+    <rect x="2" y="-24" width="4" height="8" fill="#C8A951"/>
+    <rect x="14" y="-24" width="4" height="4" fill="#C8A951"/>
+    <!-- Face -->
+    <rect x="6" y="-24" width="8" height="8" fill="#E8C999"/>
+    <!-- Eyes -->
+    <rect x="8" y="-22" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="12" y="-22" width="2" height="2" fill="#1a1a1a"/>
+    <!-- Body (green tunic) -->
+    <rect x="4" y="-16" width="12" height="12" fill="#388E3C"/>
+    <rect x="6" y="-14" width="8" height="4" fill="#2E7D32"/>
+    <!-- Belt -->
+    <rect x="4" y="-6" width="12" height="2" fill="#8B7225"/>
+    <!-- Legs -->
+    <rect x="4" y="-4" width="4" height="6" fill="#5D4037"/>
+    <rect x="12" y="-4" width="4" height="6" fill="#5D4037"/>
+    <!-- Boots -->
+    <rect x="4" y="2" width="4" height="3" fill="#3E2723"/>
+    <rect x="12" y="2" width="4" height="3" fill="#3E2723"/>
+    <!-- Shield (left hand) -->
+    <rect x="-2" y="-18" width="6" height="10" fill="#1565C0" stroke="#D4AF37" stroke-width="1"/>
+    <polygon points="1,-15 -1,-11 3,-11" fill="#D4AF37"/>
+    <!-- Sword (right hand) -->
+    <rect x="17" y="-26" width="2" height="14" fill="#B0BEC5"/>
+    <rect x="15" y="-14" width="6" height="2" fill="#D4AF37"/>
+    <rect x="17" y="-12" width="2" height="4" fill="#5D4037"/>
+  </g>
+
+  <!-- ===== SMALL SPARKLE PARTICLES ===== -->
+  <!-- Sparkle 1 -->
+  <circle cx="300" cy="160" r="1.5" fill="#D4AF37" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <!-- Sparkle 2 -->
+  <circle cx="600" cy="140" r="1" fill="#A7F432" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <!-- Sparkle 3 -->
+  <circle cx="420" cy="200" r="1.5" fill="#D4AF37" opacity="0">
+    <animate attributeName="opacity" values="0;0.6;0" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <!-- Sparkle 4 -->
+  <circle cx="520" cy="170" r="1" fill="#78C27A" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+
+</svg>
