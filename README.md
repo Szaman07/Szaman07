@@ -59,13 +59,13 @@
   <a href="https://github.com/Szaman07/CSE299_TransferGrid"><img src="./assets/quest_transfergrid.svg" width="400" alt="TransferGrid: local Streamlit workbench for PPO training, evaluation, policy transfer, checkpoint tracking and replay in MiniGrid."/></a>
   <a href="https://github.com/Szaman07/CSE445-Loan-Approval"><img src="./assets/quest_creditwise.svg" width="400" alt="CreditWise: scikit-learn training pipeline, FastAPI prediction API, and React exploration and scenario comparison. Academic demo."/></a>
   <br/>
-  <a href="https://github.com/Szaman07/CSE311-CRM"><img src="./assets/quest_crm.svg" width="400" alt="CRM: Laravel and MariaDB inventory, sales, customer history and role-based access. Course project; UI refresh planned."/></a>
+  <a href="https://github.com/Szaman07/CSE311-CRM"><img src="./assets/quest_crm.svg" width="400" alt="NexaStock: Laravel and MariaDB inventory, sales, customer history, role-based access, and an append-only stock ledger. Course project; UI refresh planned."/></a>
   <a href="https://github.com/Szaman07/CSE323_OS_project-xv6-"><img src="./assets/quest_xv6.svg" width="400" alt="xv6 team project. My contribution: automatic file versioning, snapshots, history and restoration."/></a>
   <p><a href="https://github.com/Szaman07/CSE299_TransferGrid">TransferGrid</a> &nbsp; | &nbsp;
   <a href="https://github.com/Szaman07/CSE445-Loan-Approval">CreditWise</a> &nbsp; | &nbsp;
-  <a href="https://github.com/Szaman07/CSE311-CRM">CRM</a> &nbsp; | &nbsp;
+  <a href="https://github.com/Szaman07/CSE311-CRM">NexaStock</a> &nbsp; | &nbsp;
   <a href="https://github.com/Szaman07/CSE323_OS_project-xv6-">xv6 File Versioning</a></p>
-  <p>TransferGrid, CreditWise and CRM are individual projects.<br/>
+  <p>TransferGrid, CreditWise and NexaStock are individual projects.<br/>
   For the xv6 team project, I implemented automatic file versioning; my teammate implemented symbolic links.</p>
 </div>
 
@@ -94,3 +94,4 @@
   <img src="./assets/footer.svg" alt="Thanks for visiting! May the Triforce guide you."/>
   <br/><br/>
 </div>
+
