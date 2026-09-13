@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Generate larger, cleaner Zelda ALTTP-inspired SVG assets."""
 import os
+from pathlib import Path
+from html import escape
 
-OUT = r"e:\study\Projects\github\red1-for-hek-main\assets"
+OUT = Path(__file__).resolve().parent / "assets"
 os.makedirs(OUT, exist_ok=True)
 
 GOLD = "#D4AF37"
@@ -17,28 +19,29 @@ def save(name, svg):
 
 CATS = [
     ("Programming Languages", [
-        ("C","#A8B9CC"), ("C++","#00599C"), ("Java","#ED8B00"),
-        ("Python","#3776AB"), ("JavaScript","#F7DF1E"), ("TypeScript","#3178C6"),
+        ("Python","#3776AB"), ("C","#A8B9CC"), ("PHP","#777BB4"),
+        ("JavaScript","#F7DF1E"), ("TypeScript","#3178C6"), ("SQL","#4479A1"),
     ]),
     ("Frontend", [
-        ("HTML5","#E34F26"), ("CSS3","#1572B6"), ("React","#61DAFB"),
+        ("HTML5","#E34F26"), ("CSS3","#1572B6"), ("React","#61DAFB"), ("Blade","#FF2D20"),
     ]),
     ("Backend / Frameworks", [
-        ("Node.js","#339933"), ("Express.js","#888888"), ("Django","#092E20"),
+        ("Laravel","#FF2D20"), ("FastAPI","#009688"), ("Pydantic","#E92063"),
     ]),
     ("ML / Data Science", [
-        ("PyTorch","#EE4C2C"), ("TensorFlow","#FF6F00"),
-        ("scikit-learn","#F7931E"), ("Google Colab","#F9AB00"),
+        ("PyTorch","#EE4C2C"), ("scikit-learn","#F7931E"),
+        ("NumPy","#4DABCF"), ("pandas","#150458"),
     ]),
     ("Databases", [
-        ("MySQL","#4479A1"), ("MongoDB","#47A248"), ("SQLite","#003B57"),
+        ("MariaDB","#003545"), ("Eloquent ORM","#FF2D20"),
     ]),
-    ("Dev Tools", [
-        ("Git","#F05032"), ("Linux","#FCC624"),
+    ("RL / Experiment Tools", [
+        ("SB3 / PPO","#3776AB"), ("MiniGrid","#78C27A"),
+        ("Gymnasium","#008170"), ("Streamlit","#FF4B4B"),
     ]),
-    ("Documentation & Design", [
-        ("LaTeX","#008080"), ("Markdown","#555555"), ("Figma","#F24E1E"),
-        ("AutoCAD","#E51937"),
+    ("Development & Testing", [
+        ("Git","#F05032"), ("Docker","#2496ED"), ("Vite","#646CFF"),
+        ("pytest","#0A9EDC"), ("PHPUnit","#3F9CD6"), ("Vitest","#729B1B"),
     ]),
 ]
 
@@ -48,14 +51,18 @@ ABBR = {"C++":"C+","JavaScript":"JS","TypeScript":"TS","HTML5":"H5",
         "TensorFlow":"TF","scikit-learn":"Sk","Google Colab":"Gc",
         "Git":"Gt","Linux":"Lx","LaTeX":"Lx","Markdown":"Md",
         "Figma":"Fg","Onshape":"On","AutoCAD":"Ac","React":"Re",
-        "Python":"Py","Java":"Jv","C":"C"}
+        "Python":"Py","Java":"Jv","C":"C", "PHP":"Ph", "SQL":"Sq",
+        "Blade":"Bl", "Laravel":"La", "FastAPI":"Fa", "Pydantic":"Pd",
+        "NumPy":"Np", "pandas":"Pa", "MariaDB":"Db", "Eloquent ORM":"Eq",
+        "SB3 / PPO":"RL", "MiniGrid":"Mg", "Gymnasium":"Gy", "Streamlit":"St",
+        "Docker":"Dk", "Vite":"Vi", "pytest":"Py", "PHPUnit":"Pu", "Vitest":"Vt"}
 
 def dark_text(c):
     return "#1a1a1a" if c in ("#F7DF1E","#FCC624","#F9AB00","#61DAFB") else "#fff"
 
 def tech_svg(cat_name, items, fname):
     cw, ch, gap = 170, 46, 12  # Increased card sizes
-    per_row = min(len(items), 4)
+    per_row = min(len(items), 2)
     rows = (len(items) + per_row - 1) // per_row
     pad = 20
     hdr_h = 44  # Increased header height
@@ -95,23 +102,48 @@ save("gold-divider.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
 </svg>
 ''')
 
-# ── QUEST LOG (fixed spacing) ──
+# Quest cards preserve the existing Zelda palette, borders and typography.
 save("quest_log.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="65" viewBox="0 0 800 65">
 <text x="400" y="30" text-anchor="middle" font-family="'Courier New',monospace" font-size="18" font-weight="700" fill="{GOLD}" letter-spacing="4">QUEST LOG</text>
 <line x1="80" y1="50" x2="330" y2="50" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
 <polygon points="395,44 400,50 395,56 390,50" fill="{GREEN}" opacity="0.7"/>
 <line x1="470" y1="50" x2="720" y2="50" stroke="{GOLD}" stroke-width="0.8" opacity="0.4"/>
+</svg>
+''')
 
-<rect x="40" y="75" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
-<text x="60" y="105" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Ancient AI Relic</text>
-<text x="60" y="130" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
-<text x="60" y="150" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
+PROJECTS = [
+    ("quest_crm.svg", "03 / THE MERCHANT'S LEDGER", "CRM / Inventory & Sales",
+     "Laravel | PHP | MariaDB",
+     ["Transactions, roles and stock history", "Multi-item sales and cancellation"],
+     "Course project / UI refresh planned"),
+    ("quest_creditwise.svg", "02 / THE ORACLE'S LENS", "CreditWise / Loan Approval",
+     "scikit-learn | FastAPI | React",
+     ["Train / validation / test pipeline", "Exploration and scenario comparison"],
+     "Academic classification demo"),
+    ("quest_transfergrid.svg", "01 / THE TRAINING GROUNDS", "TransferGrid / PPO Workbench",
+     "Python | SB3 | MiniGrid | Streamlit",
+     ["Train, evaluate and transfer policies", "Checkpoint tracking and replay"],
+     "Local reinforcement-learning workbench"),
+    ("quest_xv6.svg", "04 / THE KERNEL'S VAULT", "xv6 / File Versioning",
+     "C | xv6 | System calls",
+     ["My work: automatic file versioning", "Snapshots, history and restoration"],
+     "Team project / file-versioning role"),
+]
 
-<rect x="420" y="75" width="340" height="90" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
-<text x="440" y="105" font-family="'Courier New',monospace" font-size="14" font-weight="700" fill="{GOLD}">??? - Sacred DL Manuscript</text>
-<text x="440" y="130" font-family="'Courier New',monospace" font-size="13" fill="#8ca893">Status: Being prepared...</text>
-<text x="440" y="150" font-family="'Courier New',monospace" font-size="11" fill="#6c8272" font-style="italic">Quest details coming soon.</text>
+for fname, chapter, title, stack, lines, status in PROJECTS:
+    save(fname, f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="205" viewBox="0 0 400 205" role="img" aria-labelledby="title desc">
+<title id="title">{escape(title)}</title>
+<desc id="desc">{escape('. '.join(lines))}. {escape(status)}.</desc>
+<rect x="4" y="4" width="392" height="197" rx="6" fill="{BG_CARD}" stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.6"/>
+<text x="22" y="31" font-family="'Courier New',monospace" font-size="12" fill="{GREEN}">{escape(chapter)}</text>
+<text x="22" y="61" font-family="'Courier New',monospace" font-size="17" font-weight="700" fill="{GOLD}">{escape(title)}</text>
+<text x="22" y="85" font-family="'Courier New',monospace" font-size="13" fill="{TXT}">{escape(stack)}</text>
+<line x1="22" y1="100" x2="378" y2="100" stroke="{GOLD}" opacity="0.3"/>
+<text x="22" y="124" font-family="'Courier New',monospace" font-size="14" fill="{TXT}">{escape(lines[0])}</text>
+<text x="22" y="146" font-family="'Courier New',monospace" font-size="14" fill="{TXT}">{escape(lines[1])}</text>
+<text x="22" y="181" font-family="'Courier New',monospace" font-size="12" fill="{GREEN}">{escape(status)}</text>
 </svg>
 ''')
 

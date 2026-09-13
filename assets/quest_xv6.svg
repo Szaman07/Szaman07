@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="205" viewBox="0 0 400 205" role="img" aria-labelledby="title desc">
+<title id="title">xv6 / File Versioning</title>
+<desc id="desc">My work: automatic file versioning. Snapshots, history and restoration. Team project / file-versioning role.</desc>
+<rect x="4" y="4" width="392" height="197" rx="6" fill="#13261a" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.6"/>
+<text x="22" y="31" font-family="'Courier New',monospace" font-size="12" fill="#78C27A">04 / THE KERNEL&#x27;S VAULT</text>
+<text x="22" y="61" font-family="'Courier New',monospace" font-size="17" font-weight="700" fill="#D4AF37">xv6 / File Versioning</text>
+<text x="22" y="85" font-family="'Courier New',monospace" font-size="13" fill="#E2DFD2">C | xv6 | System calls</text>
+<line x1="22" y1="100" x2="378" y2="100" stroke="#D4AF37" opacity="0.3"/>
+<text x="22" y="124" font-family="'Courier New',monospace" font-size="14" fill="#E2DFD2">My work: automatic file versioning</text>
+<text x="22" y="146" font-family="'Courier New',monospace" font-size="14" fill="#E2DFD2">Snapshots, history and restoration</text>
+<text x="22" y="181" font-family="'Courier New',monospace" font-size="12" fill="#78C27A">Team project / file-versioning role</text>
+</svg>
