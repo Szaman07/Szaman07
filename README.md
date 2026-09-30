@@ -10,7 +10,11 @@
 <br/>
 
 <div align="center">
-  <p>Public projects in machine learning, reinforcement learning, databases and operating systems.</p>
+  <p>Computer Science and Engineering at North South University.<br/>
+  Interested in machine learning research, TA/RA opportunities, and graduate study.<br/>
+  Public projects in reinforcement learning, applied ML, databases and operating systems.</p>
+  <p><a href="mailto:sadmanzaman7@gmail.com">Email</a> &nbsp; | &nbsp;
+  <a href="mailto:sadman.zaman1@northsouth.edu">Academic email</a></p>
 </div>
 
 <!-- Tech Stack: technologies used in the public projects below -->

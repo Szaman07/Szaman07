@@ -113,9 +113,9 @@ save("quest_log.svg", f'''<?xml version="1.0" encoding="UTF-8"?>
 ''')
 
 PROJECTS = [
-    ("quest_crm.svg", "03 / THE MERCHANT'S LEDGER", "CRM / Inventory & Sales",
+    ("quest_crm.svg", "03 / THE MERCHANT'S LEDGER", "NexaStock / Inventory & Sales",
      "Laravel | PHP | MariaDB",
-     ["Transactions, roles and stock history", "Multi-item sales and cancellation"],
+     ["Transactions, roles and stock ledger", "Multi-item sales and cancellation"],
      "Course project / UI refresh planned"),
     ("quest_creditwise.svg", "02 / THE ORACLE'S LENS", "CreditWise / Loan Approval",
      "scikit-learn | FastAPI | React",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="205" viewBox="0 0 400 205" role="img" aria-labelledby="title desc">
 <title id="title">NexaStock / Inventory &amp; Sales</title>
-<desc id="desc">Transactions, roles and append-only stock history. Multi-item sales and cancellation. Course project / UI refresh planned.</desc>
+<desc id="desc">Transactions, roles and stock ledger. Multi-item sales and cancellation. Course project / UI refresh planned.</desc>
 <rect x="4" y="4" width="392" height="197" rx="6" fill="#13261a" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.6"/>
 <text x="22" y="31" font-family="'Courier New',monospace" font-size="12" fill="#78C27A">03 / THE MERCHANT&#x27;S LEDGER</text>
 <text x="22" y="61" font-family="'Courier New',monospace" font-size="17" font-weight="700" fill="#D4AF37">NexaStock / Inventory &amp; Sales</text>
